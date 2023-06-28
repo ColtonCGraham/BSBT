@@ -15,5 +15,9 @@ RUN npm install react-scripts@3.4.1 -g
 # add app
 COPY . ./
 
+ENV PORT=8080
+
+EXPOSE 8080
+
 # start app
 CMD ["npm", "start"]
